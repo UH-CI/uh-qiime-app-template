@@ -1,0 +1,21 @@
+{
+  "id": "sftp.storage.uhhpc1.its.hawaii.edu",
+  "name": "UH HPC1 SFTP Storage System",
+  "status": "UP",
+  "type": "STORAGE",
+  "description": "UH HPC storage system using SFTP to store data for testing",
+  "site": "hawaii.edu/its/ci",
+  "default":true,
+  "storage": {
+    "host": "uhhpc1.its.hawaii.edu",
+    "port": 22,
+    "protocol": "SFTP",
+    "rootDir": "/",
+    "homeDir": "/home/seanbc",
+    "auth": {
+      "username": "seanbc",
+      "password": "CHANGEME",
+      "type": "PASSWORD"
+    }
+  }
+}

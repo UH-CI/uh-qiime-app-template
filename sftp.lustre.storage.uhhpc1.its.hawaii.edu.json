@@ -1,0 +1,20 @@
+{
+  "id": "sftp.lustre.storage.uhhpc1.its.hawaii.edu",
+  "name": "UH HPC1 SFTP Lustre Storage System",
+  "status": "UP",
+  "type": "STORAGE",
+  "description": "UH HPC Lustre storage system using SFTP to store data for testing",
+  "site": "hawaii.edu/its/ci",
+  "storage": {
+    "host": "uhhpc1.its.hawaii.edu",
+    "port": 22,
+    "protocol": "SFTP",
+    "rootDir": "/",
+    "homeDir": "/lus/scratch/seanbc",
+    "auth": {
+      "username": "seanbc",
+      "password": "CHANGME",
+      "type": "PASSWORD"
+    }
+  }
+}

@@ -22,7 +22,7 @@
     "demo"
   ],
   "executionType": "CLI",
-  "executionSystem": "execute.uhhpc1.its.hawaii.edu",
+  "executionSystem": "sb.execute.uhhpc1.its.hawaii.edu",
   "deploymentPath": "/lus/scratch/jgeis/apps/uh-qiime-1.9.1",
   "deploymentSystem": "sftp.lustre.storage.uhhpc1.its.hawaii.edu",
   "templatePath": "wrapper.sh",

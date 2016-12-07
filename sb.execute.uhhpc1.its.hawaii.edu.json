@@ -1,0 +1,52 @@
+{
+  "id": "sb.execute.uhhpc1.its.hawaii.edu",
+  "name": "UH ITS HPC SSH Execution Host - Sandbox",
+  "status": "UP",
+  "type": "EXECUTION",
+  "description": "Execution system using ssh to submit jobs to the UH ITS HPC Sandbox.",
+  "site": "hawaii.edu/its/ci",
+  "revision": 1,
+  "public": false,
+  "executionType": "HPC",
+  "scheduler": "SLURM",
+  "environment": null,
+  "startupScript": "./bashrc",
+  "maxSystemJobsPerUser": 10,
+  "workDir": "/home/seanbc",
+  "scratchDir": "/lus/scratch/seanbc",
+  "queues": [
+    {
+      "name": "sb.q",
+      "maxJobs": 25,
+      "maxUserJobs": 5,
+      "maxNodes": 2,
+      "maxMemoryPerNode": "120GB",
+      "maxProcessorsPerNode": 20,
+      "maxRequestedTime": "00:00:30",
+      "customDirectives": null,
+      "default": true
+    }
+  ],
+  "login": {
+    "host": "uhhpc1.its.hawaii.edu",
+    "port": 22,
+    "protocol": "SSH",
+    "auth": {
+      "username": "seanbc",
+      "password": "CHANGEME",
+      "type": "PASSWORD"
+    }
+  },
+  "storage": {
+    "host": "uhhpc1.its.hawaii.edu",
+    "port": 22,
+    "protocol": "SFTP",
+    "rootDir": "/",
+    "homeDir": "/home/seanbc",
+    "auth": {
+      "username": "seanbc",
+      "password": "CHANGME",
+      "type": "PASSWORD"
+    }
+  }
+}
