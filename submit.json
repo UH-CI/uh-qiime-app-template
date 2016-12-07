@@ -1,0 +1,114 @@
+{
+  "id": "uh-qiime-1.9.1",
+  "name": "uh-qiime",
+  "icon": null,
+  "parallelism": "PTHREAD",
+  "defaultProcessorsPerNode": 1,
+  "defaultMemoryPerNode": 1,
+  "defaultNodeCount": 1,
+  "defaultMaxRunTime": null,
+  "defaultQueue": null,
+  "version": "1.9.1",
+  "isPublic": false,
+  "helpURI": null,
+  "label": "QIIME De Novo OTU picking at UH",
+  "owner": "jgeis",
+  "shortDescription": "QIIME De Novo at UH",
+  "longDescription": "QIIME is an open-source bioinformatics pipeline for performing microbiome analysis from raw DNA sequencing data.",
+  "tags": [
+    "demo"
+  ],
+  "ontology": [
+    "demo"
+  ],
+  "executionType": "CLI",
+  "executionSystem": "execute.uhhpc1.its.hawaii.edu",
+  "deploymentPath": "/lus/scratch/jgeis/apps/uh-qiime-1.9.1",
+  "deploymentSystem": "sftp.lustre.storage.uhhpc1.its.hawaii.edu",
+  "templatePath": "wrapper.sh",
+  "testPath": "test/test.sh",
+  "checkpointable": false,
+  "modules": [],
+  "inputs": [
+    {
+      "id": "input1",
+      "value": {
+        "validator": "",
+        "visible": true,
+        "required": true,
+        "order": 0,
+        "enquote": false,
+        "default": "agave://sftp.lustre.storage.uhhpc1.its.hawaii.edu/input1.qiime"
+      },
+      "details": {
+        "label": "Mapping file (.txt)",
+        "description": "The mapping file (.txt) contains all of the information about the samples necessary to perform the data analysis.",
+        "argument": null,
+        "showArgument": false,
+        "repeatArgument": false
+      },
+      "semantics": {
+        "minCardinality": 1,
+        "maxCardinality": 1,
+        "ontology": [],
+        "fileTypes": [
+          "TEXT-0"
+        ]
+      }
+    },
+    {
+      "id": "input2",
+      "value": {
+        "validator": "",
+        "visible": true,
+        "required": true,
+        "order": 0,
+        "enquote": false,
+        "default": "agave://sftp.lustre.storage.uhhpc1.its.hawaii.edu/input2.qiime"
+      },
+      "details": {
+        "label": "Sequence file (.fna)",
+        "description": "454-machine generated FASTA file (.fna)",
+        "argument": null,
+        "showArgument": false,
+        "repeatArgument": false
+      },
+      "semantics": {
+        "minCardinality": 1,
+        "maxCardinality": 1,
+        "ontology": [],
+        "fileTypes": [
+          "TEXT-0"
+        ]
+      }
+    },
+    {
+      "id": "input3",
+      "value": {
+        "validator": "",
+        "visible": true,
+        "required": true,
+        "order": 0,
+        "enquote": false,
+        "default": "agave://sftp.lustre.storage.uhhpc1.its.hawaii.edu/input3.qiime"
+      },
+      "details": {
+        "label": "Quality Score file (.qual)",
+        "description": "This is the 454-machine generated quality score file, which contains a score for each base in each sequence included in the FASTA file.",
+        "argument": null,
+        "showArgument": false,
+        "repeatArgument": false
+      },
+      "semantics": {
+        "minCardinality": 1,
+        "maxCardinality": 1,
+        "ontology": [],
+        "fileTypes": [
+          "TEXT-0"
+        ]
+      }
+    }
+  ],
+  "parameters": [],
+  "outputs": []
+}
